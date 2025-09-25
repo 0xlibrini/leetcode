@@ -1,6 +1,5 @@
 /**
  * Source: https://leetcode.com/problems/longest-common-prefix/description/
- * Note: The returned array must be malloced, assume caller calls free().
  */
 
 #include <stdio.h>
