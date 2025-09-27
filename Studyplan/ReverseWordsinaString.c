@@ -11,24 +11,19 @@ char	*reverseWords(char *str)
 	int		i;
 	int		j;
 	int		m;
-	int		flag;
 	int		e;
 	char	*s;
 
 	i = 0;
 	j = 0;
 	m = 0;
-	flag = 0;
 	while (*str && *str == 32)
-	{
 		str++;
-		flag = 1;
-	}
 	e = strlen(str);
 	e--;
 	while (e >= 0 && str[e] == 32)
 		e--;
-	s = malloc(&str[e] - &str[0] + 1);
+	s = malloc(&str[e] - &str[0] + 2);
 	j = e;
 	while (j >= 0)
 	{
