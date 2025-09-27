@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "LengthofLastWord.C": "cpp"
+        "LengthofLastWord.C": "cpp",
+        "unistd.h": "c"
     }
 }
