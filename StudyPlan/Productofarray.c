@@ -15,32 +15,34 @@ int	do_product(int *nums, int i, int numsSize)
 	m = 0;
 	// while (i < numsSize)
 	// {
-		while (m < numsSize)
-		{
-			if (m == numsSize - 1 && m == i)
-				break ;
-			else if (m == i)
-				m++;
-			j *= nums[m];
+	while (m < numsSize)
+	{
+		if (m == numsSize - 1 && m == i)
+			break ;
+		else if (m == i)
 			m++;
-		}
+		j *= nums[m];
+		m++;
+	}
 	return (j);
 }
 
 int	*productExceptSelf(int *nums, int numsSize, int *returnSize)
 {
-	 int	i;
-	 int	*arr;
-     int m = 0;
-     int j = 1;
+	int	i;
+	int	*arr;
+	int	m;
+	int	j;
 
-	 i = 0;
-	 *returnSize = numsSize;
+	m = 0;
+	j = 1;
+	i = 0;
+	*returnSize = numsSize;
 	arr = malloc(numsSize * sizeof(int));
-    while (i < numsSize)
+	while (i < numsSize)
 	{
-        m = 0;
-        j = 1; 
+		m = 0;
+		j = 1;
 		while (m < numsSize)
 		{
 			if (m == numsSize - 1 && m == i)
@@ -50,10 +52,10 @@ int	*productExceptSelf(int *nums, int numsSize, int *returnSize)
 			j *= nums[m];
 			m++;
 		}
-        arr[i] = j;
-        i++;    
+		arr[i] = j;
+		i++;
 	}
-    return arr;
+	return (arr);
 }
 int	main(void)
 {
