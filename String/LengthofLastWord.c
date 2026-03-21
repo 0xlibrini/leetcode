@@ -1,6 +1,6 @@
 
-/**
- * Source: https://leetcode.com/problems/length-of-last-word/description/
+/*
+    Source: https://leetcode.com/problems/length-of-last-word/description/
  */
 
 #include <ctype.h>
