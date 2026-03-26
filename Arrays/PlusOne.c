@@ -14,7 +14,10 @@ bool check_nine(int *arr , int Size)
     while(i < Size)
     {
         if(arr[i] == 9)
+        {
+            
             count++;
+        }
         i++;
     }
     if(count == Size)
