@@ -1,6 +1,6 @@
 
-/**
- * Source: https://leetcode.com/problems/power-of-two/description/
+/*
+ 	Source: https://leetcode.com/problems/power-of-two/description/
  */
 
 #include <stdbool.h>
